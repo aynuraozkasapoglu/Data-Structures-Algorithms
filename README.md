@@ -7,7 +7,9 @@ Data Structures and Algorithms
 4. [16,22,2,27,18,6] -> [16,2,22,27,18,6] -> [2,16,22,27,18,6]
 5. [2,16,22,18,27,6] -> [2,16,18,22,27,6]
 6. [2,16,18,22,6,27] -> [2,16,18,6,22,27] -> [2,16,6,18,22,27] -> [2,6,16,18,22,27]
+7. 
 Big-O Gösterimi: O(n²)
+
 Time Complexity:
 18 sayısı dizinin ortalarında bulunduğu için Average Case kapsamına girer.
 [7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımı:

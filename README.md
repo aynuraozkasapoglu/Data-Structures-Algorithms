@@ -17,6 +17,7 @@ Time Complexity:
 4. [2,3,4,5,7,9,8,15,6] (5 bulunur ve 4. sıraya getirilir)
    
 Bölme Aşamaları:
+
                    [16,21,11,8,12,22]
                 /                \
         [16,21,11]            [8,12,22]
@@ -26,6 +27,7 @@ Bölme Aşamaları:
     [16]  [21]   [11]    [8]   [12]    [22]
 
 Birleştirme Aşamaları:
+
       [16]  [11,21]    [8]   [12,22]
      |      |         |       |
     [11,16,21]      [8,12,22]
@@ -45,7 +47,8 @@ Big-O Gösterimi: O(nlog n)
 
 
 1. Root 7'dir.
-2. Her düğümde, sol taraf kendinden küçük, sağ taraf kendinden büyük değerleri içerir.                7
+2. Her düğümde, sol taraf kendinden küçük, sağ taraf kendinden büyük değerleri içerir.
+3.           7
                / \
               5   8
              / \   \

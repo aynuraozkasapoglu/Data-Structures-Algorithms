@@ -15,3 +15,48 @@ Time Complexity:
 2. [2,3,5,8,7,9,4,15,6] (3 zaten doğru konumda)
 3. [2,3,4,8,7,9,5,15,6] (4 bulunur ve 3. sıraya getirilir)
 4. [2,3,4,5,7,9,8,15,6] (5 bulunur ve 4. sıraya getirilir)
+   
+Bölme Aşamaları:
+                   [16,21,11,8,12,22]
+                /                \
+        [16,21,11]            [8,12,22]
+        /         \           /        \
+    [16]    [21,11]       [8]     [12,22]
+     |      /     \        |      /      \
+    [16]  [21]   [11]    [8]   [12]    [22]
+
+Birleştirme Aşamaları:
+      [16]  [11,21]    [8]   [12,22]
+     |      |         |       |
+    [11,16,21]      [8,12,22]
+           \         /
+      [8,11,12,16,21,22]
+
+Detaylı birleştirme adımları:
+[21] ve [11] -> [11,21]
+[16] ve [11,21] -> [11,16,21]
+[12] ve [22] -> [12,22]
+[8] ve [12,22] -> [8,12,22]
+[11,16,21] ve [8,12,22] -> [8,11,12,16,21,22]
+
+Big-O Gösterimi: O(nlog n)
+
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary Search Tree aşamaları:
+
+
+1. Root 7'dir.
+2. Her düğümde, sol taraf kendinden küçük, sağ taraf kendinden büyük değerleri içerir.                7
+               / \
+              5   8
+             / \   \
+            1   6   9
+           / \
+          0   3
+             / \
+            2   4
+
+Özellikler:
+Her düğümün solundaki tüm değerler kendinden küçük
+Her düğümün sağındaki tüm değerler kendinden büyük
+Her düğümün en fazla 2 çocuğu olabilir
+Aynı değer ağaçta tekrar bulunamaz
